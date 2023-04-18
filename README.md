@@ -86,9 +86,11 @@ outfile.close(
 <h3 style="color: Orange"><center>RStudio</center></h1>
 
 8. The second table we used was downloaded from ProteinAtlas. It contained human genes and tissue expression data expressed in nTPM (normalized Transcript Per Million) for humans. After removing a couple of unwanted data columns we were left with the following table:
+
 ![](https://i.imgur.com/Bg99xAk.png)
 
 9. Using a column filter we removed all rows that did not include the "cerebellum" tissue. Now we had a table with nTPM readings only in the cerebellum and could merge it with our BLAST result table.
+
 ![](https://i.imgur.com/MS02BGk.png)
 
 10. Using R, we merged the Blast results using "Human_Gene" and the human expression table "Gene_name." This returned the first merged table but to make meaningful comparisons between mice and human cerebllum genes we needed tissue level mouse RNA-seq data.
