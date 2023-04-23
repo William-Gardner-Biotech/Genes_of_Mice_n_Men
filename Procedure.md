@@ -1,9 +1,9 @@
 
 <h1 style="color: Brown"><center>Genes of Mice and Men</center></h1>
+* Required downloads listed throughout procedure and linked at the bottom
 
 ![](https://i.imgur.com/ML1UCWo.png)
 
-[TOC]
 
 <h2 style="color: Brown"><center>Background</center></h1>
 
