@@ -12,4 +12,5 @@ Orthologous genes are the result of genes conserved between two species after a 
 
 One of the anatomical areas that can be researched between humans and mice is the brain, more specifically the cerebellum, not only due to the aforementioned genetic similarities but also the anatomical resemblance. The cerebellum is located at the back of the head near where the spinal cord connects, and helps to coordinate and regulate a wide range of functions and processes in both your brain and body. [8] A disorder in the cerebellum can have effects such as; types of ataxia (failure of muscle control), brain degeneration, and cancer. The answer to what causes the development of such diseases/function may one day be found on the microscopic level of DNA, but first we must find the orthologs.
 
-![](https://i.imgur.com/PhBwMry.png)
+
+  <img src='https://i.imgur.com/PhBwMry.png' alt='FlowChart' width='100%' height='75%'/>
