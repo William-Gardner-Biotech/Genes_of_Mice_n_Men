@@ -1,6 +1,8 @@
 
 <h1 style="color: Brown"><center>Genes of Mice and Men</center></h1>
 
+Proteome download links in procedure file
+
 ![](https://i.imgur.com/ML1UCWo.png)
 
 
