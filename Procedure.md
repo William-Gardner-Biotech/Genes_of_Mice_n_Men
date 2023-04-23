@@ -22,7 +22,7 @@ One of the anatomical areas that can be researched between humans and mice is th
 
 We took orthologous gene data from our own **BlastP** data table, Mouse and human brain transcription datatables from the **Human Protein Atlas** database. We then merged the three datasets by common gene name.
 
-![](https://i.imgur.com/PhBwMry.png)
+<img src='https://i.imgur.com/PhBwMry.png' alt='FlowChart' width='90%' height='75%'/>
 
 
 <h3 style="color: Orange"><center>Bash</center></h1>
@@ -56,7 +56,7 @@ Also using max_target_seqs 1 we reduce the amount of returned protein matches to
 
 ```
 import re
-results_location = "/home/will/Proj_2/mouse_vs_human_blast_results.tab"
+results_location = "/$YOURDATA$/mouse_vs_human_blast_results.tab"
 
 results = open(results_location, "r")
 out_list = ["Mouse Gene, Human Gene"]
@@ -71,12 +71,12 @@ for line in results:
     addition = "\n"+mouse+","+human
     out_list.append(addition)
 
-outfile = open("/home/will/Proj_2/Mouse_Human.csv", "w")
+outfile = open("/$YOURDATA$/Mouse_Human.csv", "w")
 
 for i in out_list:
     outfile.write(i)
 
-outfile.close(
+outfile.close()
 ```
 
 ![](https://i.imgur.com/7RMM29G.png)
@@ -89,6 +89,7 @@ outfile.close(
 ![](https://i.imgur.com/Bg99xAk.png)
 
 9. Using a column filter we removed all rows that did not include the "cerebellum" tissue. Now we had a table with nTPM readings only in the cerebellum and could merge it with our BLAST result table.
+
 ![](https://i.imgur.com/MS02BGk.png)
 
 10. Using R, we merged the Blast results using "Human_Gene" and the human expression table "Gene_name." This returned the first merged table but to make meaningful comparisons between mice and human cerebllum genes we needed tissue level mouse RNA-seq data.
@@ -117,7 +118,7 @@ outfile.close(
 
 
 ```
-setwd("C:/Users/Will/Desktop")
+setwd("~/Desktop")
 
 library(tidyverse)
 library(dplyr)
@@ -253,6 +254,7 @@ According to our table, NOP56 is a ribonucleoprotein that is involved with neuro
 ![](https://i.imgur.com/JrfSiVD.png)
 
 **Mice NOP56 Gene Network:** 
+
 ![](https://i.imgur.com/g8UhAT3.png)
 
 **Shared:**
